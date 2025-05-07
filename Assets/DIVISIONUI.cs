@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class SUMAYRESULTADO : MonoBehaviour
+public class DIVISIONUI : MonoBehaviour
 {
     public int num1;
     public int num2;
@@ -15,13 +15,13 @@ public class SUMAYRESULTADO : MonoBehaviour
     {
         txtResultado.text = "";
     }
-
-    public void Suma()
+    public void Division()
     {
+        //Hacer un IF para que el input no sea 0
         num1 = int.Parse(inputNum1.text);
         num2 = int.Parse(inputNum2.text);
-        txtResultado.text = (num1 + num2) + "";
     }
+
     // Update is called once per frame
     void Update()
     {
